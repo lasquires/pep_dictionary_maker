@@ -150,10 +150,11 @@ def add_to_dict(mainDict, dictToAdd):
 ##you don't have to run all at once.
 ##And yeah, sorry, recursion hurts my brain. copy and pasting is easier for just a few functions
 ultimate_dict = File_to_Dict('peptide_dict.txt')
-# add_to_dict(ultimate_dict, get_dimer(aa_mass))
-# add_to_dict(ultimate_dict, get_trimer(aa_mass))
-# add_to_dict(ultimate_dict, get_tetramer(aa_mass))
-# add_to_dict(ultimate_dict, get_pentamer(aa_mass))
+add_to_dict(ultimate_dict, get_dimer(aa_mass))
+add_to_dict(ultimate_dict, get_trimer(aa_mass))
+add_to_dict(ultimate_dict, get_tetramer(aa_mass))
+add_to_dict(ultimate_dict, get_pentamer(aa_mass))
+# add_to_dict(ultimate_dict, get_hexamer(aa_mass))
 #add_to_dict(ultimate_dict, get_heptamer(aa_mass)) #MAKES THE FILE 20GB OR SOMETHING...PLZ DON'T DO
 to_File(ultimate_dict, 'peptide_dict')
 
